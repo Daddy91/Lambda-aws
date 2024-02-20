@@ -2,7 +2,7 @@ version: 0.1
 phases:
   install:
     commands:
-    - npm install --silent
+    - npm install
     - aws cloudformation package --template-file template.yaml --s3-bucket $awsloging --output-template-file output-template.yaml
 artifacts:
   type: zip
