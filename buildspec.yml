@@ -1,8 +1,6 @@
 version: 0.2  # Corrected version
 phases:
   install:
-    runtime-versions:
-      nodejs: 12  # Specify Node.js version if needed
     commands:
       - npm install --silent
   build:
