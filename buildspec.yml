@@ -9,4 +9,4 @@ phases:
 artifacts:
   type: zip
   files:
-    - output-template.yaml
+    - '**/*'

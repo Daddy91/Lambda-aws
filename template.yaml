@@ -19,13 +19,16 @@ Parameters:
 
 Resources:
   LambdaInstagramWrapper:
-    Type: 'AWS::Serverless::Function'
-    Properties:
-      Role: !Ref LambdaRole
-      FunctionName: !Ref LambdaName
-      MemorySize: 512
-      Timeout: 60
-      Handler: index.handler
-      Runtime: nodejs14.x
-      CodeUri: .
-      Description: !Ref LambdaDescription
+  Type: 'AWS::Serverless::Function'
+  Properties:
+    Role: 
+      Fn::GetAtt: 
+        - LambdaRole
+        - Arn
+    FunctionName: !Ref LambdaName
+    MemorySize: 512
+    Timeout: 60
+    Handler: index.handler
+    Runtime: nodejs14.x
+    CodeUri: .
+    Description: !Ref LambdaDescription
