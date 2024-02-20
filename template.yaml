@@ -27,5 +27,4 @@ Resources:
       Timeout: 60
       Handler: index.handler
       Runtime: nodejs20.x
-      CodeUri: .
       Description: !Ref LambdaDescription
