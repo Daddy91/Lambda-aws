@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Lambda NodeJS starter project
+Parameters:
+LambdaName:
+    Description: "login1"
+    Type: "String"
+LambdaDescription:
+    Description: "Function to automate the login logic"
+    Type: "String"
+Resources:
+  LambdaInstagramWrapper:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: !Ref LambdaName
+      MemorySize: 512
+      Timeout: 60
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: .
+      Description: !Ref LambdaDescription
