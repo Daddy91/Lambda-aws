@@ -15,6 +15,7 @@ Parameters:
   LambdaRole:
     Description: arn:aws:iam::730335543189:role/lambdafunction
     Type: "String"
+    Default: ""
 
 Resources:
   LambdaInstagramWrapper:
