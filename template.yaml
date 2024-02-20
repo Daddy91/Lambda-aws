@@ -19,7 +19,7 @@ Parameters:
 
 Resources:
   LambdaInstagramWrapper:
-    Type: 'AWS::Serverless::Function'
+    Type: 'AWS::Lambda::Function'
     Properties:
       Role: arn:aws:iam::730335543189:role/lambdafunction
       FunctionName: 'login2'
