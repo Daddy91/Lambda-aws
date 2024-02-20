@@ -21,8 +21,8 @@ Resources:
   LambdaInstagramWrapper:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Role: !Ref LambdaRole
-      FunctionName: !Ref LambdaName
+      Role: arn:aws:iam::730335543189:role/lambdafunction
+      FunctionName: 'login'
       MemorySize: 512
       Timeout: 60
       Handler: index.handler
