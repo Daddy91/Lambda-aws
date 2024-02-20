@@ -22,7 +22,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Role: arn:aws:iam::730335543189:role/lambdafunction
-      FunctionName: 'login'
+      FunctionName: 'login2'
       MemorySize: 512
       Timeout: 60
       Handler: index.handler
